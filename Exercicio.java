@@ -35,7 +35,7 @@ public class Exercicio {
         }
 
         public void questao2(){
-            double nDigitado = sc.nextInt();
+            double nDigitado = sc.nextDouble();
             System.out.println("Digite o numero de Matricula");
             if(nDigitado%4==0){
                 System.out.println("Você foi selecionado para o time do Cris");
@@ -50,4 +50,33 @@ public class Exercicio {
             }
     }
 
-    }
+        public void questao3(){
+            System.out.println("Digite a quantidade de morangos");
+            double morangos = sc.nextDouble();
+            System.out.println("Digite a quantidade de maças");
+            double maças = sc.nextDouble();
+            System.out.println("Digite a quantidade de banana");
+            double bananas = sc.nextDouble();
+            
+            double precoMorango = 2.50;
+            double precoMaça = 1.80;
+            double precoBanana = 1.30;
+
+           double valorMorango = morangos*precoMorango;
+           double valorMaça = maças*precoMaça;
+           double valorBanana = bananas*precoBanana;
+           double precoTotal = valorMorango*valorMaça*valorBanana;
+
+            double desconto = 0.1;
+            double kgFrutas = morangos+maças+bananas;
+            if(precoTotal>25.00||kgFrutas>8){
+               precoTotal =precoTotal - precoTotal*desconto;
+            
+                
+            }
+            System.out.println("O valor da sua compra é de"+precoTotal);
+        }
+
+        }
+
+
